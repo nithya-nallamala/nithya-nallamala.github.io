@@ -5,146 +5,255 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Contribution - AI Agent Stock Prediction</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-    h1, h2, h3 { color: #333; }
-    table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
-    th, td { border: 1px solid #ddd; padding: 8px; }
-    th { background-color: #f4f4f4; text-align: left; }
-    section { margin-bottom: 40px; }
-    a { color: #0366d6; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    /* Color Palette */
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #2980b9;
+      --accent-color: #e74c3c;
+      --bg-light: #ecf0f1;
+      --bg-white: #ffffff;
+      --text-color: #333333;
+      --muted-text: #7f8c8d;
+    }
+
+    /* Global Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: var(--bg-white);
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    h1 {
+      color: var(--primary-color);
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      border-bottom: 4px solid var(--secondary-color);
+      padding-bottom: 10px;
+    }
+    h2 {
+      color: var(--secondary-color);
+      margin-top: 40px;
+      border-bottom: 2px solid var(--bg-light);
+      padding-bottom: 5px;
+    }
+    h3 {
+      color: var(--primary-color);
+      margin-top: 30px;
+    }
+    p {
+      line-height: 1.6;
+    }
+    a {
+      color: var(--secondary-color);
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--accent-color);
+    }
+    /* Table Styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: var(--secondary-color);
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background-color: var(--bg-light);
+    }
+    tr:hover {
+      background-color: #d6eaf8;
+    }
+    /* List Styles */
+    ul {
+      list-style: disc inside;
+      margin: 10px 0;
+      padding: 0;
+    }
+    li {
+      margin: 8px 0;
+    }
+    /* Figures */
+    .screenshots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    figure {
+      background: var(--bg-white);
+      border: 1px solid var(--bg-light);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      width: calc(50% - 20px);
+      text-align: center;
+    }
+    figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    figcaption {
+      padding: 8px;
+      font-size: 0.9em;
+      color: var(--muted-text);
+    }
   </style>
 </head>
 <body>
-  <h1>Portfolio Contribution: AI Agent Stock Prediction</h1>
+  <div class="container">
+    <h1>Portfolio Contribution: AI Agent Stock Prediction</h1>
 
-  <section id="intro">
-    <p>This project implements an AI Agent-based Stock Prediction system integrating a custom Volume Price Trend (VPT) indicator with CrewAI agents to generate informed investment recommendations. I contributed by developing the VPT calculation engine, building the Streamlit user interface with real-time and historical data fetching, integrating decision-making capabilities via CrewAI agents, writing comprehensive unit and integration tests to ensure performance and scalability, and implementing the backtesting framework to validate the VPT-based trading strategy.</p>
-  </section>
+    <section id="intro">
+      <p>This project implements an AI Agent-based Stock Prediction system integrating a custom Volume Price Trend (VPT) indicator with CrewAI agents to generate informed investment recommendations. I contributed by developing the VPT calculation engine, building the Streamlit user interface with real-time and historical data fetching, integrating decision-making capabilities via CrewAI agents, writing comprehensive unit and integration tests to ensure performance and scalability, and implementing the backtesting framework to validate the VPT-based trading strategy.</p>
+    </section>
 
-  <section id="overview">
-    <h2>Project Overview</h2>
-    <table>
-      <tr>
-        <th>Sprint</th>
-        <th>Objective</th>
-      </tr>
-      <tr>
-        <td>Sprint 1</td>
-        <td>Develop minimal viable product: VPT indicator implementation and basic data fetching</td>
-      </tr>
-      <tr>
-        <td>Sprint 2</td>
-        <td>Add customization options and real-time data integration</td>
-      </tr>
-      <tr>
-        <td>Sprint 3</td>
-        <td>Integrate CrewAI decision support and implement testing framework</td>
-      </tr>
-      <tr>
-        <td>Sprint 4</td>
-        <td>Implement backtesting framework for the VPT strategy</td>
-      </tr>
-    </table>
-  </section>
+    <section id="overview">
+      <h2>Project Overview</h2>
+      <table>
+        <tr>
+          <th>Sprint</th>
+          <th>Objective</th>
+        </tr>
+        <tr>
+          <td>Sprint 1</td>
+          <td>Develop minimal viable product: VPT indicator implementation and basic data fetching</td>
+        </tr>
+        <tr>
+          <td>Sprint 2</td>
+          <td>Add customization options and real-time data integration</td>
+        </tr>
+        <tr>
+          <td>Sprint 3</td>
+          <td>Integrate CrewAI decision support and implement testing framework</td>
+        </tr>
+        <tr>
+          <td>Sprint 4</td>
+          <td>Implement backtesting framework for the VPT strategy</td>
+        </tr>
+      </table>
+    </section>
 
-  <section id="userstories">
-    <h2>User Stories & Task Summary</h2>
-    <ul>
-      <li><strong>VPT.1 - Implement Indicator Calculation</strong>: Built the core VPT computation logic (22 actual hours).</li>
-      <li><strong>VPT.6 - Design and Develop User Interface</strong>: Created Streamlit UI with customization controls and data display (24 actual hours).</li>
-      <li><strong>VPT.8 - Develop Investment Decision Support</strong>: Integrated CrewAI agents for buy/sell/hold recommendations (32 actual hours).</li>
-      <li><strong>VPT.10 - Implement Testing Framework</strong>: Wrote unit and integration tests to ensure functionality and scalability (28 actual hours).</li>
-      <li><strong>VPT.11 - Implement Backtesting Framework</strong>: Developed backtesting components to validate strategy performance (30 actual hours).</li>
-    </ul>
-    <p>Other tasks and user stories are documented in the <a href="#appendix">Appendix</a>.</p>
-  </section>
+    <section id="userstories">
+      <h2>User Stories & Task Summary</h2>
+      <ul>
+        <li><strong>VPT.1 - Implement Indicator Calculation</strong>: Built the core VPT computation logic (22 actual hours).</li>
+        <li><strong>VPT.6 - Design and Develop User Interface</strong>: Created Streamlit UI with customization controls and data display (24 actual hours).</li>
+        <li><strong>VPT.8 - Develop Investment Decision Support</strong>: Integrated CrewAI agents for buy/sell/hold recommendations (32 actual hours).</li>
+        <li><strong>VPT.10 - Implement Testing Framework</strong>: Wrote unit and integration tests to ensure functionality and scalability (28 actual hours).</li>
+        <li><strong>VPT.11 - Implement Backtesting Framework</strong>: Developed backtesting components to validate strategy performance (30 actual hours).</li>
+      </ul>
+      <p>Other tasks and user stories are documented in the <a href="#appendix">Appendix</a>.</p>
+    </section>
 
-  <section id="evidence">
-    <h2>Evidence of Contributions</h2>
-    <ul>
-      <li><a href="https://github.com/nithya-nallamala/AI-Agent-Stock-Prediction">View the full codebase on GitHub</a></li>
-     </ul>
-    
-    <h2>Output Screenshots</h2>
-    
+    <section id="evidence">
+      <h2>Evidence of Contributions</h2>
+      <ul>
+        <li><a href="https://github.com/nithya-nallamala/AI-Agent-Stock-Prediction">View the full codebase on GitHub</a></li>
+      </ul>
+      <h2>Output Screenshots</h2>
+      <div class="screenshots">
         <figure>
-          <img src="images/1.jpg">
+          <img src="images/1.jpg" alt="VPT Interface">
+          <figcaption>Streamlit UI with VPT Controls</figcaption>
         </figure>
-            <figure>
-          <img src="images/2.jpg">
+        <figure>
+          <img src="images/2.jpg" alt="Data Table">
+          <figcaption>Data Table Display</figcaption>
         </figure>
-            <figure>
-          <img src="images/3.jpg">
+        <figure>
+          <img src="images/3.jpg" alt="VPT Chart">
+          <figcaption>VPT Trend Chart</figcaption>
         </figure>
-                <figure>
-          <img src="images/4.jpg">
+        <figure>
+          <img src="images/4.jpg" alt="Backtest Chart">
+          <figcaption>Backtesting Performance Chart</figcaption>
         </figure>
-            <figure>
-          <img src="images/5.jpg">
+        <figure>
+          <img src="images/5.jpg" alt="Decision Output">
+          <figcaption>Investment Decision Output</figcaption>
         </figure>
-            <figure>
-          <img src="images/6.jpg">
+        <figure>
+          <img src="images/6.jpg" alt="Test Results">
+          <figcaption>Unit & Integration Test Results</figcaption>
         </figure>
-  </section>
-  </section>
-  <h3>Commit History</h3>
-    <table>
-      <tr>
-        <th>Date</th>
-        <th>Commit SHA</th>
-        <th>Description</th>
-        <th>Task</th>
-      </tr>
-      <tr>
-        <td>2025-02-03</td>
-        <td>d099f9af6395966597c7809a303db7bd1a88e37c</td>
-        <td>VPT main file</td>
-        <td>VPT.1</td>
-      </tr>
-      <tr>
-        <td>2025-02-11</td>
-        <td>68173156e69aded01a5f8aece3d08eb560009662</td>
-        <td>Add VPT features and fetch real-time and historical data</td>
-        <td>VPT.6</td>
-      </tr>
-      <tr>
-        <td>2025-02-27</td>
-        <td>83627a9dc513a276ed6b184c3c899e2886635b29</td>
-        <td>Adding CrewAI capabilities for actionable investment recommendations based on VPT signals</td>
-        <td>VPT.8</td>
-      </tr>
-      <tr>
-        <td>2025-03-10</td>
-        <td>735071051b6df222838ff1304f383adfef48e7fd</td>
-        <td>Added comments</td>
-        <td>VPT.8</td>
-      </tr>
-      <tr>
-        <td>2025-03-25</td>
-        <td>1220e8150028e2c92cabdb802dc693960b81abbc</td>
-        <td>Add test cases for VPT indicator</td>
-        <td>VPT.10</td>
-      </tr>
-      <tr>
-        <td>2025-04-21</td>
-        <td>9659e4dcc6cdad3ae525ce26bad1774900ffeb7b</td>
-        <td>Backtesting code for VPT</td>
-        <td>VPT.11</td>
-      </tr>
-    </table>
-  
+      </div>
+    </section>
 
-  <section id="appendix">
-    <h2>Appendix</h2>
-       <h3>Download Task Hours Documents</h3>
-    <ul>
-      <li><a href="Nallamala%20Sprint%201%20Task%20Hours%20Achieved.docx" download>Sprint 1 Task Hours Achieved</a> </li>
-      <li><a href="Nallamala%20Sprint%202%20Task%20Hours%20Achieved.docx" download>Sprint 2 Task Hours Achieved</a> </li>
-      <li><a href="Nallamala%20Sprint%203%20Task%20Hours%20Achieved.docx" download>Sprint 3 Task Hours Achieved</a> </li>
-      <li><a href="Nallamala%20Sprint%204%20Task%20Hours%20Achieved.docx" download>Sprint 4 Task Hours Achieved</a> </li>
-    </ul>
-    
+    <section id="appendix">
+      <h2>Appendix</h2>
+      <h3>Commit History (Tasks I Worked On)</h3>
+      <table>
+        <tr>
+          <th>Date</th>
+          <th>Commit SHA</th>
+          <th>Description</th>
+          <th>Task</th>
+        </tr>
+        <tr>
+          <td>2025-02-03</td>
+          <td>d099f9af6395966597c7809a303db7bd1a88e37c</td>
+          <td>VPT main file</td>
+          <td>VPT.1</td>
+        </tr>
+        <tr>
+          <td>2025-02-11</td>
+          <td>68173156e69aded01a5f8aece3d08eb560009662</td>
+          <td>Add VPT features and fetch real-time and historical data</td>
+          <td>VPT.6</td>
+        </tr>
+        <tr>
+          <td>2025-02-27</td>
+          <td>83627a9dc513a276ed6b184c3c899e2886635b29</td>
+          <td>Adding CrewAI capabilities for actionable investment recommendations based on VPT signals</td>
+          <td>VPT.8</td>
+        </tr>
+        <tr>
+          <td>2025-03-10</td>
+          <td>735071051b6df222838ff1304f383adfef48e7fd</td>
+          <td>Added comments</td>
+          <td>VPT.8</td>
+        </tr>
+        <tr>
+          <td>2025-03-25</td>
+          <td>1220e8150028e2c92cabdb802dc693960b81abbc</td>
+          <td>Add test cases for VPT indicator</td>
+          <td>VPT.10</td>
+        </tr>
+        <tr>
+          <td>2025-04-21</td>
+          <td>9659e4dcc6cdad3ae525ce26bad1774900ffeb7b</td>
+          <td>Backtesting code for VPT</td>
+          <td>VPT.11</td>
+        </tr>
+      </table>
 
+      <h3>Download Task Hours Documents</h3>
+      <ul>
+        <li><a href="Nallamala%20Sprint%201%20Task%20Hours%20Achieved.docx" download>Sprint 1 Task Hours Achieved</a></li>
+        <li><a href="Nallamala%20Sprint%202%20Task%20Hours%20Achieved.docx" download>Sprint 2 Task Hours Achieved</a></li>
+        <li><a href="Nallamala%20Sprint%203%20Task%20Hours%20Achieved.docx" download>Sprint 3 Task Hours Achieved</a></li>
+        <li><a href="Nallamala%20Sprint%204%20Task%20Hours%20Achieved.docx" download>Sprint 4 Task Hours Achieved</a></li>
+      </ul>
+      <p>For the full list of commits and detailed user story documentation, see the <a href="https://github.com/nithya-nallamala/AI-Agent-Stock-Prediction/commits/main">GitHub commits page</a>.</p>
+    </section>
+  </div>
 </body>
 </html>
